@@ -19,7 +19,7 @@ spec:
       serviceAccountName: hello
       containers:
         - name: hello
-          image: gcr.io/solstice-api-junkyard/hello
+          image: hello
           ports:
             - containerPort: 8080
 ---
