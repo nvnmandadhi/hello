@@ -25,9 +25,6 @@ jobs:
     - run: |-
         gcloud --quiet auth configure-docker
 
-    - run: |-
-        gcloud container clusters get-credentials "$GKE_CLUSTER" --zone "$GKE_ZONE"
-
     - name: Build
       run: |-
         docker build \
